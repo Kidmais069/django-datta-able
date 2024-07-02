@@ -153,9 +153,13 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 
-LANGUAGE_CODE = "en-us"
+# LANGUAGE_CODE = "en-us"
 
-TIME_ZONE = "UTC"
+# TIME_ZONE = "UTC"
+
+LANGUAGE_CODE = "pt-br"
+
+TIME_ZONE = 'America/Sao_Paulo'
 
 USE_I18N = True
 
@@ -189,7 +193,10 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 # ### DYNAMIC_DATATB Settings ###
 DYNAMIC_DATATB = {
     # SLUG -> Import_PATH 
-    'product'  : "home.models.Product",
+    # 'product'  : "home.models.Product",
+    'Produtos'  : "home.models.Produtos",
+    'Comissões BTG'  : "home.models.Comissoes_BTG",
+    'Comissões AAI'  : "home.models.Comissoes_AAI",
 }
 ########################################
 
